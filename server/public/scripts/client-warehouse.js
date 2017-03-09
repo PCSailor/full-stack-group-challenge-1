@@ -7,7 +7,7 @@ var bizApp = angular.module('warehouseApp', ['ngRoute']);
   controller: 'warehouseController',
   controllerAs: 'wc'
 });
-  }])
+  }]);
 
 
-])
+]);
