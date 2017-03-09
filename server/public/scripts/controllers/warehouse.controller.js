@@ -1,14 +1,14 @@
-bizApp.controller('warehousecontroller', ['$http', 'warehouseFactory', function($http, warehouseFactory){
+bizApp.controller('warehousecontroller', ['$http', 'WarehouseFactory', function($http, WarehouseFactory){
 console.log('warehousecontroller loaded');
 var self = this;
 self.newWarehouse = {};
-self.warehouse = warehouseFactory.warehouseTasks
+self.warehouse = WarehouseFactory.warehouseTasks
 
 
 
 
 self.addWarehouse = function() {
-warehouseFactory.addThisWarehouse(self.newWarehouse)
+WarehouseFactory.addThisWarehouse(self.newWarehouse)
 self.newWarehouse = {};
 }
 
@@ -18,7 +18,7 @@ self.newWarehouse = {};
 
 
 // NOTE: FACTORY SETTINGS
-bizApp.factory('warehouseFactory', ['http', function($http) {
+bizApp.factory('WarehouseFactory', ['http', function($http) {
 var warehouseFactoryVar = { list: [] };// NOTE: from TaskController // must be property inside of object:
 
 }]);
