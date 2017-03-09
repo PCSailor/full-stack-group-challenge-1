@@ -1,5 +1,5 @@
 App.controller('AboutController', function(){
 
 var self = this;
-self.newTask = {};
+self. = {};
 self.taskList = WarehouseFactory.orders;
