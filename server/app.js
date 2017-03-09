@@ -10,6 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/', warehouseRouter);
 
-app.listen(3003, function() {
+app.listen(3000, function() {
   console.log('listening on 3000');
 });
