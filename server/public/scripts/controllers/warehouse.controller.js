@@ -1,0 +1,1 @@
+bizApp.Controller('warehousecontroller', [])
