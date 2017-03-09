@@ -1,0 +1,31 @@
+{
+  "name": "full-stack-group-challenge-1",
+  "version": "1.0.0",
+  "description": "Phil-Ed-Jeremy-Melissa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCSailor/full-stack-group-challenge-1.git"
+  },
+  "keywords": [
+    "warehouse-manager"
+  ],
+  "author": "Phil-Ed-Jeremy-Melissa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PCSailor/full-stack-group-challenge-1/issues"
+  },
+  "homepage": "https://github.com/PCSailor/full-stack-group-challenge-1#readme",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.3"
+  }
+}
