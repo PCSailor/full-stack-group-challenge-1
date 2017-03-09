@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var warehouseRouter = require('./routes/tasks');
+var warehouseRouter = require('./routes/warehouse');
 
 //middleware
 app.use(express.static('public'));
