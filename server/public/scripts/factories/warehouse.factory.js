@@ -1,19 +1,20 @@
-App.factory('TaskFactory', ['$http', function($http) {
+App.factory('WarehouseFactory', ['$http', function($http) {
 
-  var factoryTasks = { list: [] };
+  var customers = { list: [] };
 
-  getTasks();
+  getCustomers();
 
-  function getTasks() {
+  function getCustomers() {
     $http({
       method: 'GET',
-      url: '/warehouse'
+      url: '/warehouse/customers'
     }).then(function(response) {
       console.log('response from factory: ', response);
       console.log('response.data from factory: ', response.data);
-      factoryTasks.list = response.data;
-      // factoryTasks = {
-      //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
-      // }
+      customers.list = response.data;
+
     });
+    return {
+      customers: customers
+    };
   }
