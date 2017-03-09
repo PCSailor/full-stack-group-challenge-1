@@ -4,8 +4,7 @@ App.controller('CustomersController', ['WarehouseFactory', function(WarehouseFac
   var self = this;
 
 
-    self.addTask = function() {
-      WarehouseFactory.addTask();
-  };
+    self.customers = WarehouseFactory.customers;
+
 
 }]);
