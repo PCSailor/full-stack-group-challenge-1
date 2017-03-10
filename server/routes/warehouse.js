@@ -12,7 +12,7 @@ var config = {
 var pool = new pg.Pool(config);
 
 // get all tasks
-router.get('/', function(req, res) {
+router.get('/orders', function(req, res) {
   console.log('hit my get all tasks route');
   pool.connect(function(err, client, done) {
     if(err){
@@ -20,7 +20,7 @@ router.get('/', function(req, res) {
       res.sendStatus(500);
     }else{
       // SELECT * FROM task;
-      client.query('SELECT * FROM warehouse, products, orders, customers, line_items, addresses, warehouse_product;', function(err, result) {
+      client.query('SELECT * FROM orders;', function(err, result) {
         done(); // close the connection db
 
         if(err){
@@ -34,6 +34,68 @@ router.get('/', function(req, res) {
     }
   });
 });
+
+router.get('/warehouse', function(req, res) {
+  console.log('hit my get all tasks route');
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+      // SELECT * FROM task;
+      client.query('SELECT * FROM warehouse;', function(err, result) {
+        done(); // close the connection db
+
+        if(err){
+          console.log(err);
+          res.sendStatus(500); // the world exploded
+        }else{
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      });
+    }
+  });
+});
+
+router.get('/customers', function(req, res) {
+  console.log('hit my get all tasks route');
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+      // SELECT * FROM task;
+      client.query('SELECT * FROM customers;', function(err, result) {
+        done(); // close the connection db
+
+        if(err){
+          console.log(err);
+          res.sendStatus(500); // the world exploded
+        }else{
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // create a new task in the db
 router.post('/', function(req, res) {

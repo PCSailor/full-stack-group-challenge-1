@@ -15,8 +15,8 @@
 4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
 4 verbose stack     at tryToString (fs.js:426:3)
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:413:12)
-5 verbose cwd /Users/avatar/Desktop/Phi/group-projects/full-stack-group-challenge-1
-6 error Darwin 15.6.0
+5 verbose cwd /Users/linhkieule/Desktop/angular/warehouse/full-stack-group-challenge-1/server
+6 error Darwin 16.4.0
 7 error argv "/usr/local/Cellar/node/7.5.0/bin/node" "/usr/local/bin/npm" "start"
 8 error node v7.5.0
 9 error npm  v4.1.2
