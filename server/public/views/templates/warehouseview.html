@@ -1,1 +1,15 @@
-{{wc.list}}
+
+<table>
+  <thead>
+    <tr>
+      <td>Warehouse</td>
+      <td>Fullfillment Days</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="warehouse in wc.warehouse.list">
+      <td>{{warehouse.warehouse}}</td>
+      <td>{{warehouse.fulfillment_days}}</td>
+    </tr>
+  </tbody>
+</table>
