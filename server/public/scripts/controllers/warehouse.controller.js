@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 App.controller('warehousecontroller', ['$http', 'WarehouseFactory', function($http, WarehouseFactory){
 console.log('warehousecontroller loaded');
 var self = this;
@@ -13,5 +11,3 @@ self.newWarehouse = {};
 }
 
 }]);
-=======
->>>>>>> feature-backend
