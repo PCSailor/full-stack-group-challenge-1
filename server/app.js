@@ -4,11 +4,6 @@ var app = express();
 var path = require('path');
 var warehouseRouter = require('./routes/warehouse');
 
-
-// app.get('/',function(req,res){
-//   console.log("hit get path");
-//   res.sendFile(path.resolve('server/public/views/index.html'));
-// });
 //middleware
 app.use(express.static('server/public'));
 app.use(bodyParser.json());

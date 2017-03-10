@@ -19,6 +19,7 @@ App.config(['$routeProvider', function($routeProvider) {
       controllerAs: 'wc'
     })
     .otherwise({
-      redirectTo: 'warehouseview'
+      redirectTo: 'warehouse'
     });
+
 }]);

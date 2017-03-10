@@ -1,1 +1,30 @@
-{{oc}}
+
+  {{oc.message}}
+  <p>taco</p>
+<table>
+<thead>
+  <tr>
+<th>Order Date</th>
+<th>Description</th>
+<th>Street</th>
+<th>City</th>
+<th>State</th>
+<th>zip</th>
+<th>Address Type</th>
+<th>Customer Name</th>
+</tr>
+</thead>
+<tbody>
+  <tr ng-repeat="order in oc.orders.list">
+    <td>{{order.order_date}}</td>
+    <td>{{order.description}}</td>
+    <td>{{order.street}}</td>
+    <td>{{order.city}}</td>
+    <td>{{order.state}}</td>
+    <td>{{order.zip}}</td>
+    <td>{{order.address_type}}</td>
+    <td>{{order.last_name}}, {{oc.first_name}}</td>
+  </tr>
+</tbody>
+</table>
+<!-- </div> -->
