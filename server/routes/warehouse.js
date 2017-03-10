@@ -35,6 +35,68 @@ router.get('/orders', function(req, res) {
   });
 });
 
+router.get('/warehouse', function(req, res) {
+  console.log('hit my get all tasks route');
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+      // SELECT * FROM task;
+      client.query('SELECT * FROM warehouse;', function(err, result) {
+        done(); // close the connection db
+
+        if(err){
+          console.log(err);
+          res.sendStatus(500); // the world exploded
+        }else{
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      });
+    }
+  });
+});
+
+router.get('/customers', function(req, res) {
+  console.log('hit my get all tasks route');
+  pool.connect(function(err, client, done) {
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    }else{
+      // SELECT * FROM task;
+      client.query('SELECT * FROM customers;', function(err, result) {
+        done(); // close the connection db
+
+        if(err){
+          console.log(err);
+          res.sendStatus(500); // the world exploded
+        }else{
+          console.log(result.rows);
+          res.status(200).send(result.rows);
+        }
+      });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // create a new task in the db
 router.post('/', function(req, res) {
   console.log('hit post route');

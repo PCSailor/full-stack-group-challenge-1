@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,17 +8,26 @@
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/factories/warehouse.factory.js" charset="utf-8"></script>
     <script src="scripts/controllers/orders.controller.js" charset="utf-8"></script>
+    <script src="scripts/controllers/warehouse.controller.js" charset="utf-8"></script>
+    <script src="scripts/controllers/customers.controller.js" charset="utf-8"></script>
 
     <title>Full Stack Group Challenge</title>
-  </head>
+
+</head>
+<h1>WAREHOUSE</h1>
+<body ng-app="App">
+
+<header ng-include="'/views/templates/nav.html'"></header>
+<main ng-view></main>
 
 
 
 
 
 
-  <body ng-app="App">
-    <h1>test header</h1>
-    <main ng-include="'/views/templates/ordersview.html'"></main>
+
+
+
+
   </body>
 </html>
