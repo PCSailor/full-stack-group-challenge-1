@@ -2,23 +2,23 @@ var App = angular.module('App', ['ngRoute']);
 
 App.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/customersview', {
+    .when('/customers', {
       templateUrl: '/views/templates/customersview.html',
       controller: 'CustomersController',
       controllerAs: 'cc'
     })
-    .when('/ordersview', {
+    .when('/orders', {
       templateUrl: '/views/templates/ordersview.html',
       controller: 'OrdersController',
       controllerAs: 'oc'
     })
-    .when('/warehouseview', {
+    .when('/warehouse', {
       templateUrl: '/views/templates/warehouseview.html',
       controller: 'WarehouseController',
       controllerAs: 'wc'
     })
     .otherwise({
-      redirectTo: 'warehouseview'
+      redirectTo: 'warehouse'
     });
 
 }]);
