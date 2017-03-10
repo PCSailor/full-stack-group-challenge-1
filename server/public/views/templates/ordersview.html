@@ -1,6 +1,4 @@
 <!-- <div ng-controller="OrdersController as oc"> -->
-  {{oc.message}}
-  <p>taco</p>
 <table>
 <thead>
   <tr>
@@ -16,14 +14,14 @@
 </thead>
 <tbody>
   <tr ng-repeat="order in oc.orders.list">
-    <td>{{order.order_date}}</td>
+    <td>{{order.order_date | date: 'yyyy-MM-dd'}}</td>
     <td>{{order.description}}</td>
     <td>{{order.street}}</td>
     <td>{{order.city}}</td>
     <td>{{order.state}}</td>
     <td>{{order.zip}}</td>
     <td>{{order.address_type}}</td>
-    <td>{{order.last_name}}, {{oc.first_name}}</td>
+    <td>{{order.last_name}}, {{order.first_name}}</td>
   </tr>
 </tbody>
 </table>

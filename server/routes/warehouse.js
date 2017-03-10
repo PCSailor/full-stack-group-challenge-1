@@ -20,7 +20,7 @@ router.get('/orders', function(req, res) {
       res.sendStatus(500);
     }else{
       // SELECT * FROM task;
-      client.query('SELECT * FROM orders;', function(err, result) {
+      client.query('SELECT order_date, description, street, city, state, city, state, zip, address_type, first_name, last_name FROM customers FULL OUTER JOIN addresses ON customers.id=addresses.customer_id FULL OUTER JOIN orders ON addresses.id = orders.address_id FULL OUTER JOIN line_items ON orders.id = line_items.order_id JOIN products ON products.id = line_items.product_id ORDER BY order_date;', function(err, result) {
         done(); // close the connection db
 
         if(err){
