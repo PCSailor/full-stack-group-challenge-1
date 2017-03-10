@@ -1,0 +1,162 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'path' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData path
+8 silly fetchNamedPackageData path
+9 silly mapToRegistry name path
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'path',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'path',
+12 silly mapToRegistry   name: 'path',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/path
+14 verbose request uri https://registry.npmjs.org/path
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:59:57 AM
+17 verbose request id 000bcc903768c517
+18 verbose etag W/"58763140-1693"
+19 verbose lastModified Wed, 11 Jan 2017 13:21:04 GMT
+20 http request GET https://registry.npmjs.org/path
+21 info retry will retry, error on last attempt: Error: socket hang up
+22 info attempt registry request try #2 at 12:00:10 PM
+23 verbose etag W/"58763140-1693"
+24 verbose lastModified Wed, 11 Jan 2017 13:21:04 GMT
+25 http request GET https://registry.npmjs.org/path
+26 info retry will retry, error on last attempt: Error: socket hang up
+27 info attempt registry request try #3 at 12:01:10 PM
+28 verbose etag W/"58763140-1693"
+29 verbose lastModified Wed, 11 Jan 2017 13:21:04 GMT
+30 http request GET https://registry.npmjs.org/path
+31 silly get cb [ 304, undefined ]
+32 verbose etag https://registry.npmjs.org/path from cache
+33 verbose get saving path to /Users/PC/.npm/registry.npmjs.org/path/.cache.json
+34 verbose correctMkdir /Users/PC/.npm correctMkdir not in flight; initializing
+35 silly install normalizeTree
+36 silly loadCurrentTree Finishing
+37 silly loadIdealTree Starting
+38 silly install loadIdealTree
+39 silly cloneCurrentTree Starting
+40 silly install cloneCurrentTreeToIdealTree
+41 silly cloneCurrentTree Finishing
+42 silly loadShrinkwrap Starting
+43 silly install loadShrinkwrap
+44 silly loadShrinkwrap Finishing
+45 silly loadAllDepsIntoIdealTree Starting
+46 silly install loadAllDepsIntoIdealTree
+47 silly resolveWithNewModule path@0.12.7 checking installable status
+48 silly cache add args [ 'path', null ]
+49 verbose cache add spec path
+50 silly cache add parsed spec Result {
+50 silly cache add   raw: 'path',
+50 silly cache add   scope: null,
+50 silly cache add   escapedName: 'path',
+50 silly cache add   name: 'path',
+50 silly cache add   rawSpec: '',
+50 silly cache add   spec: 'latest',
+50 silly cache add   type: 'tag' }
+51 silly addNamed path@latest
+52 verbose addNamed "latest" is being treated as a dist-tag for path
+53 info addNameTag [ 'path', 'latest' ]
+54 silly mapToRegistry name path
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'path',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   escapedName: 'path',
+57 silly mapToRegistry   name: 'path',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/path
+59 verbose addNameTag registry:https://registry.npmjs.org/path not in flight; fetching
+60 verbose get https://registry.npmjs.org/path not expired, no request
+61 silly addNameTag next cb for path with tag latest
+62 silly addNamed path@0.12.7
+63 verbose addNamed "0.12.7" is a plain semver version for path
+64 silly mapToRegistry name path
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry data Result {
+67 silly mapToRegistry   raw: 'path',
+67 silly mapToRegistry   scope: null,
+67 silly mapToRegistry   escapedName: 'path',
+67 silly mapToRegistry   name: 'path',
+67 silly mapToRegistry   rawSpec: '',
+67 silly mapToRegistry   spec: 'latest',
+67 silly mapToRegistry   type: 'tag' }
+68 silly mapToRegistry uri https://registry.npmjs.org/path
+69 verbose addRemoteTarball https://registry.npmjs.org/path/-/path-0.12.7.tgz not in flight; adding
+70 verbose addRemoteTarball [ 'https://registry.npmjs.org/path/-/path-0.12.7.tgz',
+70 verbose addRemoteTarball   'd4dc2a506c4ce2197eb481ebfcd5b36c0140b10f' ]
+71 info retry fetch attempt 1 at 12:01:11 PM
+72 info attempt registry request try #1 at 12:01:11 PM
+73 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+74 info retry will retry, error on last attempt: Error: socket hang up
+75 info attempt registry request try #2 at 12:01:21 PM
+76 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+77 info retry will retry, error on last attempt: Error: socket hang up
+78 info attempt registry request try #3 at 12:02:22 PM
+79 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+80 error fetch failed https://registry.npmjs.org/path/-/path-0.12.7.tgz
+81 warn retry will retry, error on last attempt: Error: socket hang up
+82 info retry fetch attempt 2 at 12:02:32 PM
+83 info attempt registry request try #1 at 12:02:32 PM
+84 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+85 info retry will retry, error on last attempt: Error: socket hang up
+86 info attempt registry request try #2 at 12:02:42 PM
+87 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+88 info retry will retry, error on last attempt: Error: socket hang up
+89 info attempt registry request try #3 at 12:03:42 PM
+90 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+91 error fetch failed https://registry.npmjs.org/path/-/path-0.12.7.tgz
+92 warn retry will retry, error on last attempt: Error: socket hang up
+93 info retry fetch attempt 3 at 12:04:43 PM
+94 info attempt registry request try #1 at 12:04:43 PM
+95 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+96 info retry will retry, error on last attempt: Error: socket hang up
+97 info attempt registry request try #2 at 12:04:53 PM
+98 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+99 info retry will retry, error on last attempt: Error: socket hang up
+100 info attempt registry request try #3 at 12:05:54 PM
+101 http fetch GET https://registry.npmjs.org/path/-/path-0.12.7.tgz
+102 error fetch failed https://registry.npmjs.org/path/-/path-0.12.7.tgz
+103 silly rollbackFailedOptional Starting
+104 silly rollbackFailedOptional Finishing
+105 silly runTopLevelLifecycles Finishing
+106 silly install printInstalled
+107 verbose stack Error: socket hang up
+107 verbose stack     at TLSSocket.onHangUp (_tls_wrap.js:1117:19)
+107 verbose stack     at Object.onceWrapper (events.js:291:19)
+107 verbose stack     at emitNone (events.js:91:20)
+107 verbose stack     at TLSSocket.emit (events.js:186:7)
+107 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+107 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+107 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+108 verbose cwd /Users/PC/Desktop/full-stack-group-challenge-1
+109 error Darwin 14.5.0
+110 error argv "/usr/local/Cellar/node/7.5.0/bin/node" "/usr/local/bin/npm" "install" "--save" "path"
+111 error node v7.5.0
+112 error npm  v4.1.2
+113 error code ECONNRESET
+114 error network socket hang up
+115 error network This is most likely not a problem with npm itself
+115 error network and is related to network connectivity.
+115 error network In most cases you are behind a proxy or have bad network settings.
+115 error network
+115 error network If you are behind a proxy, please make sure that the
+115 error network 'proxy' config is set properly.  See: 'npm help config'
+116 verbose exit [ 1, true ]
