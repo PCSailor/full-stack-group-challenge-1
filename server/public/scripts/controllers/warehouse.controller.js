@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-
-App.controller('warehousecontroller', ['$http', 'WarehouseFactory', function($http, WarehouseFactory){
-console.log('warehousecontroller loaded');
+App.controller('WarehouseController', [ 'WarehouseFactory', function( WarehouseFactory){
+console.log('WarehouseController loaded');
 var self = this;
 self.newWarehouse = {};
-self.warehouse = WarehouseFactory.warehouseTasks
+self.warehouse = WarehouseFactory.warehouse.list;
 
 
-self.addWarehouse = function() {
-WarehouseFactory.addThisWarehouse(self.newWarehouse)
-self.newWarehouse = {};
-}
+// self.getWarehouse = function() {
+// WarehouseFactory.addThisWarehouse(self.newWarehouse)
+// self.newWarehouse = {};
+// }
 
 }]);
-=======
->>>>>>> feature-backend

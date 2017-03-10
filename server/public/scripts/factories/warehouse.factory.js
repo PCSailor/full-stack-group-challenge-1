@@ -15,7 +15,7 @@ App.factory('WarehouseFactory', ['$http', function(WarehouseFactory,$http) {
     }).then(function(response) {
       console.log('response from factory: ', response);
       console.log('response.data from factory: ', response.data);
-      factoryTasks.list = response.data;
+      customers.list = response.data;
       // factoryTasks = {
       //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
       // }
@@ -30,10 +30,8 @@ App.factory('WarehouseFactory', ['$http', function(WarehouseFactory,$http) {
     }).then(function(response) {
       console.log('response from factory: ', response);
       console.log('response.data from factory: ', response.data);
-      factoryTasks.list = response.data;
-      // factoryTasks = {
-      //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
-      // }
+      orders.list = response.data;
+
     });
   }
 
@@ -44,16 +42,15 @@ App.factory('WarehouseFactory', ['$http', function(WarehouseFactory,$http) {
     }).then(function(response) {
       console.log('response from factory: ', response);
       console.log('response.data from factory: ', response.data);
-      factoryTasks.list = response.data;
-      // factoryTasks = {
-      //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
-      // }
+      warehouse.list = response.data;
+
     });
   }
 
   return{
-  customers : getCustomers,
-  warehouse: getWarehouse,
-  orders: getOrders
+
+  customers : customers,
+  warehouse: warehouse,
+  orders: orders
 };
 }]);

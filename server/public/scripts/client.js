@@ -1,6 +1,7 @@
 var App = angular.module('App', ['ngRoute']);
 console.log("client JS started");
 App.config(['$routeProvider', function($routeProvider) {
+
   $routeProvider
     .when('/customers', {
       templateUrl: '/views/templates/customersview.html',

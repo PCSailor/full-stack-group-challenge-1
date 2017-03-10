@@ -1,5 +1,5 @@
 
-App.controller('CustomersController', ['WarehouseFactory',"$http", function(WarehouseFactory,$http){
+App.controller('CustomersController', ['WarehouseFactory', function(WarehouseFactory){
   console.log('The CustomersController was loaded');
   var self = this;
 
