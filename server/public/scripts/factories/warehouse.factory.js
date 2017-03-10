@@ -18,3 +18,4 @@ App.factory('WarehouseFactory', ['$http', function($http) {
       customers: customers
     };
   }
+}]);
