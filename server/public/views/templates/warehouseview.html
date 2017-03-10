@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>warehouseTable</title>
-  </head>
-  <body>
-This is the warehouse page! {{wc.someMessage}}
+
 <table>
   <thead>
     <tr>
@@ -14,11 +7,9 @@ This is the warehouse page! {{wc.someMessage}}
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><input ng-model="wc.warehouse.list"></td><td></td>
+    <tr ng-repeat="warehouse in wc.warehouse.list">
+      <td>{{warehouse.warehouse}}</td>
+      <td>{{warehouse.fulfillment_days}}</td>
     </tr>
   </tbody>
 </table>
-
-  </body>
-</html>
