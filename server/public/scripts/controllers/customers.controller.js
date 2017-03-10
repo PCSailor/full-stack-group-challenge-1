@@ -4,7 +4,7 @@ App.controller('CustomersController', ['WarehouseFactory', function(WarehouseFac
   var self = this;
 
 
-    self.customers = WarehouseFactory.customers.list;
+    self.customers = WarehouseFactory.customers;
     self.message = 'just show up dammit!';
 
 }]);

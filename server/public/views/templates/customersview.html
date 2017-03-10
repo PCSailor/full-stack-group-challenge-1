@@ -1,9 +1,14 @@
-
-
 <table>
-  <tr ng-repeat="x in customers">
-    <td>{{ x.first_name}}</td>
-    <td>{{ x.last_name}}</td>
-{{cc.message}}
+<thead>
+  <tr>
+<th>First Name</th>
+<th>Last Name</th>
+</tr>
+</thead>
+<tbody>
+  <tr ng-repeat="customers in cc.customers.list">
+    <td>{{customers.first_name}}</td>
+    <td>{{customers.last_name}}</td>
   </tr>
+</tbody>
 </table>

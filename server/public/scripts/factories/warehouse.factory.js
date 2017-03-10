@@ -1,12 +1,12 @@
 App.factory('WarehouseFactory', ['$http', function($http) {
 
   var customers = { list: [] };
-    var warehouse = { list: [] };
-      var orders = { list: [] };
+  var warehouse = { list: [] };
+  var orders = { list: [] };
 
   getWarehouse();
-    getCustomers();
-      getOrders();
+  getCustomers();
+  getOrders();
 
   function getCustomers() {
     $http({
@@ -22,6 +22,10 @@ App.factory('WarehouseFactory', ['$http', function($http) {
     });
   }
 
+  // getCustomers();
+  getOrders();
+
+
 
   function getOrders() {
     $http({
@@ -30,12 +34,10 @@ App.factory('WarehouseFactory', ['$http', function($http) {
     }).then(function(response) {
       console.log('response from factory: ', response);
       console.log('response.data from factory: ', response.data);
-      factoryTasks.list = response.data;
-      // factoryTasks = {
-      //   list: [{name: 'sleep', id: 1}, {name: 'wake up', id: 2}]
-      // }
+      orders.list = response.data;
     });
   }
+
 
 
   function getWarehouse() {
@@ -52,10 +54,11 @@ App.factory('WarehouseFactory', ['$http', function($http) {
     });
   }
 
+
   return{
-  customers : customers,
-  warehouse: warehouse,
-  orders: orders
-};
+    customers : customers,
+    warehouse: warehouse,
+    orders: orders
+  };
 
 }]);
